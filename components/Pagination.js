@@ -7,11 +7,11 @@ import DisplayError from './ErrorMessage';
 import { perPage } from '../config';
 
 const PAGINATION_QUERY = gql`
-    qurey {
-        _allProductsMeta {
-            count
-        }
+  query {
+    _allProductsMeta {
+      count
     }
+  }
 `;
 
 export default function Pagination({ page }) {
