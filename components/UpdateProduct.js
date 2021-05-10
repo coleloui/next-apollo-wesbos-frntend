@@ -49,8 +49,6 @@ export default function UpdateProduct({ id }) {
   // 2.5 create state for the form inputs:
   const { inputs, handleChange, clearForm, resetForm } = useForm(data?.Product);
 
-  if (loading) return <p>loading...</p>;
-
   // 3. we need the form to handle the updates
   return (
     <Form
